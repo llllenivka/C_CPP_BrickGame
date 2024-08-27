@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>image/field.png</file>
+        <file>image/tetris_1.png</file>
+        <file>image/apple.png</file>
+        <file>image/tetris_2.png</file>
+        <file>image/tetris_3.png</file>
+        <file>image/tetris_4.png</file>
+        <file>image/tetris_5.png</file>
+    </qresource>
+    <qresource prefix="/record"/>
+    <qresource prefix="/txt"/>
+    <qresource prefix="/">
+        <file>record_score_tetris.txt</file>
+        <file>record_score_snake.txt</file>
+    </qresource>
+</RCC>

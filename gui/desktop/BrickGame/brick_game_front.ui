@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BrickGameFront</class>
+ <widget class="QMainWindow" name="BrickGameFront">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>714</width>
+    <height>927</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BrickGameFront</string>
+  </property>
+  <widget class="QWidget" name="MainMenu">
+   <property name="styleSheet">
+    <string notr="true">background:rgb(250, 180, 203);</string>
+   </property>
+   <widget class="QWidget" name="widgetMenu" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>591</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background: rgb(251, 249, 250);
+ border-radius: 40px;}</string>
+    </property>
+    <widget class="QLabel" name="NameGame">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>150</y>
+       <width>511</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Heiti SC</family>
+       <pointsize>92</pointsize>
+       <bold>true</bold>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	background: rgb(251, 249, 250);
+	color:  rgb(145, 47, 85);
+}</string>
+     </property>
+     <property name="text">
+      <string>Brick Game</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="TextMenu">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>330</y>
+       <width>411</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Heiti SC</family>
+       <pointsize>25</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	background: rgb(251, 249, 250);
+	color:  rgb(86, 85, 86);
+}</string>
+     </property>
+     <property name="text">
+      <string>MENU</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>400</y>
+       <width>411</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	color : rgb(145, 47, 85);
+	background: rgb(252, 250, 253);
+	border: 3px solid rgb(145, 47, 85);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonTetrisGame">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>420</y>
+       <width>391</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Heiti SC</family>
+       <pointsize>27</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: rgb(251, 249, 250);
+	color: rgb(145, 47, 85);
+	border: 3px solid rgb(251, 249, 250);
+	border-radius: 20px;
+}
+
+QPushButton:hover {
+	background: rgb(145, 47, 85);
+	color: rgb(251, 249, 250);
+}
+
+QPushButton:pressed {
+	background:qlineargradient(spread:pad, x1:1, y1:0.613636, x2:0.995, y2:0.0170455, stop:0 rgba(128, 42, 76, 255), stop:1 rgba(228, 76, 136, 255));
+	color: rgb(251, 249, 250);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>t e t r i s</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonSnakeGame">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>480</y>
+       <width>391</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Heiti SC</family>
+       <pointsize>27</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: rgb(251, 249, 250);
+	color: rgb(145, 47, 85);
+	border: 3px solid rgb(251, 249, 250);
+	border-radius: 20px;
+}
+
+QPushButton:hover {
+	background: rgb(145, 47, 85);
+	color: rgb(251, 249, 250);
+}
+
+QPushButton:pressed {
+	background:qlineargradient(spread:pad, x1:1, y1:0.613636, x2:0.995, y2:0.0170455, stop:0 rgba(128, 42, 76, 255), stop:1 rgba(228, 76, 136, 255));
+	color: rgb(251, 249, 250);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>s n a k e</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonQuit">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>540</y>
+       <width>391</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Heiti SC</family>
+       <pointsize>27</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: rgb(251, 249, 250);
+	color: rgb(145, 47, 85);
+	border: 3px solid rgb(251, 249, 250);
+	border-radius: 20px;
+}
+
+QPushButton:hover {
+	background: rgb(145, 47, 85);
+	color: rgb(251, 249, 250);
+}
+
+QPushButton:pressed {
+	background:qlineargradient(spread:pad, x1:1, y1:0.613636, x2:0.995, y2:0.0170455, stop:0 rgba(128, 42, 76, 255), stop:1 rgba(228, 76, 136, 255));
+	color: rgb(251, 249, 250);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>q u i t</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>651</width>
+      <height>821</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel { background-color: black;
+ border: 1px;
+border-radius: 40px; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="BrickGamev2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>810</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Heiti SC</family>
+      <pointsize>18</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background: black;
+	color:rgb(251, 249, 250);
+}</string>
+    </property>
+    <property name="text">
+     <string>BrickGameV2.0</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>widgetMenu</zorder>
+   <zorder>BrickGamev2</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">background: rgb(146, 50, 88);</string>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>714</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar{
+	background: rgb(146, 50, 88);
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
